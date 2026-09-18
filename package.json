@@ -1,0 +1,79 @@
+{
+  "name": "web-ui-primitives",
+  "description": "Shared React + Mantine UI primitives for ExaDev's web frontends",
+  "version": "0.0.0",
+  "bugs": "https://github.com/ExaDev/web-ui-primitives/issues",
+  "devDependencies": {
+    "@arethetypeswrong/cli": "0.18.5",
+    "@exadev/eslint-config": "2.19.4",
+    "@mantine/core": "9.6.1",
+    "@mantine/hooks": "9.6.1",
+    "@semantic-release/changelog": "7.0.0",
+    "@semantic-release/commit-analyzer": "13.0.1",
+    "@semantic-release/git": "11.0.1",
+    "@semantic-release/github": "12.0.9",
+    "@semantic-release/npm": "13.1.5",
+    "@semantic-release/release-notes-generator": "14.1.1",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.7",
+    "@types/node": "26.6.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "conventional-changelog-conventionalcommits": "10.2.1",
+    "eslint": "10.10.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.6",
+    "globals": "17.12.0",
+    "jiti": "2.7.0",
+    "jsdom": "30.1.0",
+    "prettier": "3.9.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "semantic-release": "25.0.9",
+    "tsdown": "0.23.0",
+    "turbo": "2.11.0",
+    "typescript": "6.0.3",
+    "vitest": "5.0.1"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/submit-row.js",
+      "require": "./dist/submit-row.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/ExaDev/web-ui-primitives#readme",
+  "license": "MIT",
+  "main": "./dist/submit-row.cjs",
+  "module": "./dist/submit-row.js",
+  "packageManager": "pnpm@12.4.1+sha512.2e81e399d73fe8390dab25e06aa788ab7a5908248d2f5a370f82b481147a6a7a367bf8048f9a6fdb6460f21a66f0542dedb8b94ca2c8723596741920b1656d4c",
+  "peerDependencies": {
+    "@mantine/core": ">=8.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "publishConfig": {
+    "provenance": true,
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ExaDev/web-ui-primitives"
+  },
+  "scripts": {
+    "_build": "tsdown",
+    "_lint": "eslint . --fix --cache --max-warnings 0",
+    "_test": "vitest run",
+    "_typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.node.json --noEmit",
+    "build": "turbo run _build",
+    "lint": "turbo run _lint",
+    "test": "turbo run _test",
+    "typecheck": "turbo run _typecheck"
+  },
+  "type": "module",
+  "types": "./dist/submit-row.d.cts"
+}

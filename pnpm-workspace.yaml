@@ -1,0 +1,10 @@
+minimumReleaseAgeExclude:
+  - '@exadev/eslint-config@2.19.4'
+  - '@turbo/darwin-64@2.11.0'
+  - '@turbo/darwin-arm64@2.11.0'
+  - '@turbo/linux-64@2.11.0'
+  - '@turbo/linux-arm64@2.11.0'
+  - '@turbo/windows-64@2.11.0'
+  - '@turbo/windows-arm64@2.11.0'
+  - prettier@3.9.8
+  - turbo@2.11.0

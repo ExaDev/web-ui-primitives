@@ -1,0 +1,23 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+
+  // Every task name is the underscore-prefixed one the package.json script actually runs, matching cddl.js's own convention: a task literally named "build" would make `pnpm run build`'s own `turbo run build` call resolve straight back to itself.
+  "tasks": {
+    "_build": {
+      "inputs": ["src/**", "tsdown.config.ts", "tsconfig.json"],
+      "outputs": ["dist/**"]
+    },
+    "_lint": {
+      "dependsOn": ["_build"],
+      "inputs": ["$TURBO_DEFAULT$", "eslint.config.ts"],
+      "outputs": [".eslintcache"]
+    },
+    "_test": {
+      "dependsOn": ["_build"]
+    },
+    "_typecheck": {
+      "dependsOn": ["_build"],
+      "inputs": ["**/*.ts", "**/*.tsx", "tsconfig.json", "tsconfig.node.json"]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "types": ["node"]
+  },
+  "extends": "./tsconfig.json",
+  "include": [
+    "tsdown.config.ts",
+    "eslint.config.ts",
+    "release.config.ts",
+    "vitest.config.ts",
+    "test/**/*.ts",
+    "test/**/*.tsx"
+  ]
+}
