@@ -1,7 +1,7 @@
 {
   "name": "web-ui-primitives",
   "description": "Shared React + Mantine UI primitives for ExaDev's web frontends",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bugs": "https://github.com/ExaDev/web-ui-primitives/issues",
   "devDependencies": {
     "@arethetypeswrong/cli": "0.18.5",
