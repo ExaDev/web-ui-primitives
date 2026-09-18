@@ -1,3 +1,6 @@
+allowBuilds:
+  # postinstall downloads the platform-specific binary esbuild needs to run at all (a vanilla-extract compiler transitive dependency).
+  esbuild: true
 minimumReleaseAgeExclude:
   - '@exadev/eslint-config@2.19.4'
   - '@turbo/darwin-64@2.11.0'
