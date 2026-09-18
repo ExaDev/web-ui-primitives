@@ -21,6 +21,15 @@ describe("SubmitRow", () => {
     vi.unstubAllGlobals();
   });
 
+  it("stretches to fill whatever flex container it's placed in, not just its own input", () => {
+    const { container } = renderWithMantine(
+      <SubmitRow ariaLabel="Room name" submitLabel="Join" onSubmit={vi.fn()} />,
+    );
+
+    const root = container.querySelector(".mantine-Group-root");
+    expect(root).toHaveStyle({ flex: "1 1 0%" });
+  });
+
   it("does nothing for an empty or whitespace-only value", () => {
     const onSubmit = vi.fn();
     renderWithMantine(

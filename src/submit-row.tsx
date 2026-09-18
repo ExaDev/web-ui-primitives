@@ -60,7 +60,7 @@ export function SubmitRow({
 
   return (
     <>
-      <Group gap="xs">
+      <Group gap="xs" flex={1}>
         <TextInput
           flex={1}
           {...(size === undefined ? {} : { size })}
