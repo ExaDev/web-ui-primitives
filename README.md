@@ -4,6 +4,8 @@
 
 Shared React + Mantine UI primitives for ExaDev's web frontends.
 
+[![npm downloads chart, log scale](https://shieldcn.dev/chart/npm/web-ui-primitives.svg?bg=transparent&logo=false&yScale=log)](https://www.npmjs.com/package/web-ui-primitives)
+
 ## Why
 
 ExaDev runs more than one browser-based frontend on the same stack (React 19, Mantine, Vite): agent-comms' web bridge and wire-mesh's web-console among them. Once both apps are on the same UI stack, a handful of presentational patterns turn out to be genuinely duplicated rather than merely similar, and belong in one place instead of drifting apart across repos. This package holds exactly those patterns, built from a real entry per primitive rather than a re-exporting barrel file (see tsdown.config.ts). With a single primitive today, that entry is the package root; a second one lands as its own `./name` subpath the moment it exists, no manual package.json editing needed.
