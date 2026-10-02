@@ -1,6 +1,6 @@
 # web-ui-primitives
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/ExaDev/web-ui-primitives) [![npm](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=white)](https://www.npmjs.com/package/web-ui-primitives)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/ExaDev/web-ui-primitives) [![npm](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=white)](https://www.npmjs.com/package/web-ui-primitives) [![Release](https://img.shields.io/github/v/release/ExaDev/web-ui-primitives)](https://github.com/ExaDev/web-ui-primitives/releases/latest) [![CI](https://img.shields.io/github/actions/workflow/status/ExaDev/web-ui-primitives/ci.yml?branch=main)](https://github.com/ExaDev/web-ui-primitives/actions)
 
 Shared React + Mantine UI primitives for ExaDev's web frontends.
 
