@@ -36,7 +36,7 @@
     "rollup": "4.63.3",
     "semantic-release": "25.0.9",
     "tsdown": "0.23.0",
-    "turbo": "2.11.0",
+    "turbo": "2.11.5",
     "typescript": "6.0.3",
     "vitest": "5.0.1"
   },
