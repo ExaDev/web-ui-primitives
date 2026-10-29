@@ -1,3 +1,18 @@
+## [1.1.4](https://github.com/ExaDev/web-ui-primitives/compare/v1.1.3...v1.1.4) (2026-10-29)
+
+### Bug Fixes
+
+* list every commit type in the release notes ([d72d850](https://github.com/ExaDev/web-ui-primitives/commit/d72d850624559a6b29b3b41df252c2c2b51a8b84))
+* order turbo.json keys so lint passes ([7b12f49](https://github.com/ExaDev/web-ui-primitives/commit/7b12f49a00d4f4a19fba21e837c258ff4a086f29))
+
+### Documentation
+
+* list the commits behind each release that had an empty changelog entry ([8a04443](https://github.com/ExaDev/web-ui-primitives/commit/8a04443de9055e26243adb116c39971a79e6ba5f))
+
+### Chores
+
+* upgrade turbo to 2.11.5 and disable agentGuidance ([a287025](https://github.com/ExaDev/web-ui-primitives/commit/a287025db1ba4ed19062f1dc8288182ea9cb6d4c))
+
 ## [1.1.3](https://github.com/ExaDev/web-ui-primitives/compare/v1.1.2...v1.1.3) (2026-10-02)
 
 ### Documentation
